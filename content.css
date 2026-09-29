@@ -1,0 +1,74 @@
+#ytc-copy-transcript {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  margin-right: 8px;
+  padding: 0 16px 0 12px;
+  border: 0;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #0f0f0f;
+  font: 500 14px/36px Roboto, Arial, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#ytc-copy-transcript:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#ytc-copy-transcript:disabled {
+  cursor: progress;
+  opacity: 0.7;
+}
+
+#ytc-copy-transcript svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+html[dark] #ytc-copy-transcript {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f1f1f1;
+}
+
+html[dark] #ytc-copy-transcript:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#ytc-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  z-index: 10000;
+  max-width: min(480px, calc(100vw - 32px));
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #0f0f0f;
+  color: #fff;
+  font: 400 14px/20px Roboto, Arial, sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 16px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+html[dark] #ytc-toast {
+  background: #f1f1f1;
+  color: #0f0f0f;
+}
+
+#ytc-toast.ytc-show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+#ytc-toast.ytc-error,
+html[dark] #ytc-toast.ytc-error {
+  background: #cc0000;
+  color: #fff;
+}
