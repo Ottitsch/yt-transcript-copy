@@ -18,7 +18,6 @@ Open a video and use any of these:
 | Click **Copy transcript** next to the Like button | Copies the transcript as one block of text |
 | **Shift** + click the button | Copies it with one line per caption and `[m:ss]` timestamps |
 | Click the toolbar icon | Same as clicking the button |
-| **Alt+Shift+C** | Same as clicking the button (change it at `chrome://extensions/shortcuts`) |
 
 A short message at the bottom of the page confirms how many lines were copied. The toolbar icon is greyed out on every site except YouTube.
 
