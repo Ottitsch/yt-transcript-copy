@@ -1,6 +1,6 @@
-// Service worker: keeps the toolbar button enabled on YouTube only, forwards toolbar clicks and
-// the keyboard shortcut to the content script, and writes to the clipboard through an offscreen
-// document when the page itself is not allowed to (for example because it is not focused).
+// Service worker: keeps the toolbar button enabled on YouTube only, forwards toolbar clicks to the
+// content script, and writes to the clipboard through an offscreen document when the page itself
+// is not allowed to (for example because it is not focused).
 
 function limitActionToYouTube() {
   chrome.action.disable();
