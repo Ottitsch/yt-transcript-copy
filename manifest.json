@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Transcript Copier",
+  "name": "YT Transcript Copy",
   "version": "1.0.0",
   "description": "Copy the full transcript of a YouTube video to the clipboard in one click.",
   "icons": {
